@@ -71,9 +71,11 @@ body {
   font-weight: 700;
   list-style: none;
   text-transform: uppercase;
+  transition: 0.25s;
+  cursor: pointer;
 }
 
-.navigation__item_active {
+.navigation__item:hover {
   color: #f06c64;
 }
 
@@ -90,6 +92,10 @@ body {
 
 .navigation__item + .navigation__item {
   padding-left: 27px;
+}
+
+.navigation__item_active {
+  color: #f06c64;
 }
 
 /* Slider section */
