@@ -110,7 +110,7 @@ p {
   padding: 33px 40px 0 41px;
   margin: 0 auto;
   width: 1020px;
-  height: 735px;
+  height: 734px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #fff;
 }
@@ -167,4 +167,40 @@ p {
 .about-us-card:last-child p {
   padding-right: -5px;
   letter-spacing: -0.1px;
+}
+
+.social-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.about-us-card:nth-child(1) .social-links {
+  margin-left: 1px;
+}
+
+.about-us-card:nth-child(2) .social-links {
+  margin-left: 1px;
+}
+
+.social-links__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #747b94;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.social-links__item:hover {
+  background-color: #adb1c0;
+  border: 1px solid #4d4d4d;
+}
+
+.social-links__item:not(:first-child) {
+  margin-left: 8px;
 }
